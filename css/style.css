@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    column-gap: 2px;
+    row-gap: 2px;
+    min-height: 100vh;
+    grid-template-areas:
+        'hd hd hd'
+        'sc sc sc'
+        'ft ft ft';
+}
+
+header {
+    background-color: blue;
+    grid-area: hd;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+section {
+    grid-area: sc;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+footer {
+    grid-area: ft;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
