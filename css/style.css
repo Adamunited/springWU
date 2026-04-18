@@ -142,3 +142,292 @@ footer {
     'sc sc as'
     'ft ft ft'
 }
+
+.kontakt-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.kontakt-vänster h2,
+.kontakt-höger h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.kontakt-item {
+    margin-bottom: 25px;
+}
+
+.kontakt-item h3 {
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.kontakt-item p {
+    color: black;
+    margin: 0;
+    font-size: 14px;
+}
+
+.kontakt-item a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.kontakt-item a:hover {
+    text-decoration: underline;
+}
+
+.sociala-intro {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.social-card {
+    background: white;
+    padding: 35px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    text-align: center;
+}
+
+.social-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.emoji {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.social-card h3 {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+.social-card p {
+    color: black;
+    font-size: 13px;
+    margin: 0;
+}
+
+.om-innehål {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.om-text {
+    color: #333;
+}
+
+.om-text h3 {
+    color: #2c3e50;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.om-text p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.om-kort {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.skill-kort {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.skill-kort h3 {
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.skill-kort p {
+    color: #666;
+    margin: 0;
+    font-size: 13px;
+}
+
+.om-cta {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.om-cta h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.om-cta p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.feature-card h3 {
+    color: black;
+    margin-top: 0;
+}
+
+.feature-card p {
+    color: grey;
+    margin: 0;
+}
+
+/* FLEX FOOTER */
+footer {
+    grid-area: ft;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* FLEX FÖR NAV */
+nav {
+    grid-area: nv;
+    padding: 10px;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: 2px 2px 5px;
+    border-radius: 5px;
+}
+
+/* FLEX FÖR OM MIG SIDAN */
+.om-innehål {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.om-text {
+    flex: 2;
+    min-width: 300px;
+    color: #333;
+}
+
+.om-kort {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-kort {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.kontakt-grid {
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.kontakt-vänster {
+    flex: 1;
+    min-width: 300px;
+}
+
+.kontakt-höger {
+    flex: 1;
+    min-width: 300px;
+}
+
+.social-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-card {
+    flex: 1;
+    min-width: 180px;
+    background: white;
+    padding: 35px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    text-align: center;
+}
+
+.social-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
