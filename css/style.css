@@ -431,3 +431,93 @@ nav a {
 .social-card:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+
+.burger-btn {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fade-layer {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+
+.fade-layer.visible {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'hd'
+            'sc'
+            'ft';
+    }
+
+    nav.nav-knappar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 220px;
+        height: 100vh;
+        z-index: 999;
+        background-color: #2c3e50;
+        padding: 60px 15px 20px;
+        transition: right 0.3s ease;
+    }
+
+    nav.nav-knappar.show {
+        right: 0;
+    }
+
+    nav.nav-knappar a {
+        background-color: rgba(255,255,255,0.1);
+        color: white;
+        margin-bottom: 8px;
+    }
+
+    nav.nav-knappar a:hover {
+        background-color: rgba(255,255,255,0.25);
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    nav:not(.nav-knappar) {
+        display: none;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .kontakt-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .om-innehål {
+        flex-direction: column;
+    }
+
+    .social-grid {
+        flex-direction: column;
+    }
+}
